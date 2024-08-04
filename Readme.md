@@ -12,6 +12,10 @@ This is a personal voice assistant that can perform various tasks such as playin
 2. **Fix Errors**: The assistant can take a screenshot, extract text from the image, and attempt to fix any errors found in the text.
 3. **Chatbot**: The assistant can engage in normal conversations with you.
 
+Error Fixing Process:
+
+When a user reports an error, the Personal Voice Assistant takes a screenshot of the current screen to capture the exact issue. This image is then processed using OpenCV to extract the text from the screenshot. The extracted text is sent to the LLaMA 3 language model, which analyzes the content and generates a relevant response or solution. The assistant then communicates the suggested fix or troubleshooting steps back to the user, ensuring a streamlined and effective resolution process.
+
 ## Getting Started
 
 ### Prerequisites
@@ -53,6 +57,46 @@ GROQ_API_KEY=your_groq_api_key
 
 You can add more functionalities to the assistant through the function calling list. Learn more about function calling at [DataCamp's OpenAI Function Calling Tutorial](https://www.datacamp.com/tutorial/open-ai-function-calling-tutorial).
 
+You can use the same for meta LLama3 
+
+## Adding More Functions
+
+You can add more functionalities to the assistant through the function calling list. Learn more about function calling at [DataCamp's OpenAI Function Calling Tutorial](https://www.datacamp.com/tutorial/open-ai-function-calling-tutorial).
+
+To add new functions, update the `function_calling_template` in the code:
+
+```python
+function_calling_template = """ 
+    <tools> {
+    "name": "Your Function",
+    "description": "Description of the function",
+    "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+    },
+    } </tools>
+  """
+```
+
+## Libraries and APIs Used
+
+- `json`
+- `speech_recognition`
+- `pyttsx3`
+- `groq`
+- `Pillow`
+- `opencv-python-headless`
+- `pytesseract`
+- `datasets`
+- `torch`
+- `transformers`
+- `soundfile`
+- `sounddevice`
+- `requests`
+- `beautifulsoup4`
+- `keyboard`
+- `tkinter`
 
 ## License
 

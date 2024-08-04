@@ -16,7 +16,6 @@ import torch
 import time
 
 from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan
-from deepgram import DeepgramClient, SpeakOptions
 from dotenv import load_dotenv
 import io
 import soundfile as sf

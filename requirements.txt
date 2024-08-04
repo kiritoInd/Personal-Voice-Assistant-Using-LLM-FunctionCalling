@@ -1,7 +1,7 @@
 speechrecognition
 pyttsx3
 groq
-pillow
+Pillow
 pytesseract
 datasets
 torch
