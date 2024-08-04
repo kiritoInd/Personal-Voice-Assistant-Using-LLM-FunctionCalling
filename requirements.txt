@@ -1,0 +1,15 @@
+speechrecognition
+pyttsx3
+groq
+pillow
+pytesseract
+datasets
+torch
+transformers
+python-dotenv
+soundfile
+sounddevice
+flask
+requests
+beautifulsoup4
+keyboard
