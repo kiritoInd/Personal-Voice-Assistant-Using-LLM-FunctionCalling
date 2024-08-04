@@ -26,8 +26,8 @@ Make sure you have Python installed on your system. You can download it from [py
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/kiritoInd/Personal-Voice-Assistant.git
+    cd Personal-Voice-Assistant
     ```
 
 2. Install the required packages:
